@@ -1,6 +1,9 @@
 <mat-toolbar color="primary" ngClass="fixed-expand-toolbar">
     <mat-toolbar-row ngClass="mat-elevation-z4">
-        <span>{{appTitle}}</span>
+        <div class="app-brand">
+            <img src="../../../assets/hisquery.svg" height="40" width="43" alt="logo">
+            <span>{{appTitle}}</span>
+        </div>
         <span class="row-expand"></span>
         <div>
             <button (click)="openLoginModal()" mat-button>Login</button>
