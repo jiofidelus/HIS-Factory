@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-register-modal',
@@ -7,7 +8,9 @@ import { MatDialogRef } from '@angular/material/dialog';
   styleUrls: ['./register-modal.component.scss']
 })
 export class RegisterModalComponent implements OnInit {
-
+  
+  hidePassword = true;
+  
   constructor(public dialogRef: MatDialogRef<RegisterModalComponent>) { 
 
   }
@@ -18,4 +21,11 @@ export class RegisterModalComponent implements OnInit {
   onNoClick(): void{
     this.dialogRef.close();
   }
+
+  toggleVisibility(event: Event){
+    event.preventDefault();
+    this.hidePassword = !this.hidePassword;
+  }
+
+ 
 }

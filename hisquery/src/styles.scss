@@ -22,6 +22,7 @@ $hisquery-theme: mat-light-theme($hisquery-primary, $hisquery-accent, $hisquery-
 
 /* You can add global styles to this file, and also import other style files */
 
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 html,
 body {
     height: 100%;
@@ -30,4 +31,12 @@ body {
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.match-width {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
 }

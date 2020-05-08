@@ -7,7 +7,7 @@ import { MatDialogRef } from '@angular/material/dialog';
   styleUrls: ['./login-modal.component.scss']
 })
 export class LoginModalComponent implements OnInit {
-
+  hidePassword = true;
   constructor(public dialogRef: MatDialogRef<LoginModalComponent>) { 
 
   }
@@ -17,6 +17,11 @@ export class LoginModalComponent implements OnInit {
 
   onNoClick(): void{
     this.dialogRef.close();
+  }
+
+  toggleVisibility(event: Event){
+    event.preventDefault();
+    this.hidePassword = !this.hidePassword;
   }
 
 }
