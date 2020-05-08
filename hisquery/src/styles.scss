@@ -40,3 +40,41 @@ body {
 .text-center {
     text-align: center;
 }
+
+.d-flex {
+    display: flex;
+}
+
+.jtf-center {
+    justify-content: center;
+}
+
+.ali-center {
+    align-items: center;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.text-mute {
+    color: #666;
+}
+
+.divider {
+    height: 2px;
+    width: 100%;
+    background-color: #ccc;
+}

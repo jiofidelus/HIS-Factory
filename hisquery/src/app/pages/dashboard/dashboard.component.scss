@@ -1,0 +1,61 @@
+html,
+body {
+    background-color: #000 !important;
+}
+
+.row-expand {
+    flex: 1 1 auto;
+}
+
+.fixed-expand-toolbar {
+    position: fixed;
+    width: 100%;
+}
+
+.app-brand {
+    display: flex;
+    align-items: center;
+    &>img {
+        margin-right: 10px;
+    }
+    &>span {
+        font-size: 16px;
+    }
+}
+
+main {
+    padding-top: 100px;
+    #welcome-section {
+        margin-top: 100px;
+    }
+}
+
+.avatar-group {
+    display: flex;
+    align-items: center;
+    &>.avatar-icon {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: dodgerblue;
+        margin-right: 10px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 16px;
+    }
+    &>.avatar-label {
+        font-size: 16px;
+    }
+}
+
+.card-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    .card-project {
+        width: 150px;
+        height: 120px;
+        margin: 0 15px;
+        background-color: #fff;
+    }
+}
