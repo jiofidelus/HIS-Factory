@@ -9,20 +9,22 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { LoginModalComponent } from './components/login-modal/login-modal.component';
 import { RegisterModalComponent } from './components/register-modal/register-modal.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     LoginModalComponent,
-    RegisterModalComponent
+    RegisterModalComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    ReactiveFormsModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
