@@ -1,0 +1,64 @@
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
+.overflow-none {
+    overflow: none;
+}
+
+.relative {
+    position: relative
+}
+
+.absolute {
+    position: absolute
+}
+
+.d-flex {
+    display: flex;
+}
+
+.jtf-space-between {
+    justify-content: space-between;
+}
+
+.jtf-space-around {
+    justify-content: space-around;
+}
+
+.jtf-space-evenly {
+    justify-content: space-evenly;
+}
+
+.jtf-center {
+    justify-content: center;
+}
+
+.ali-center {
+    align-items: center;
+}
+
+.match-parent {
+    width: 100%;
+    height: 100%;
+}
+
+.match-height {
+    height: 100%;
+}
+
+.match-width {
+    width: 100%;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
