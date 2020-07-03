@@ -23,7 +23,7 @@ export default {
     width: 100%;
     overflow: hidden;
     overflow-x: auto;
-    grid-template-columns: 250px 1fr 250px;
+    grid-template-columns: 250px 1fr 300px;
 
 }
 </style>

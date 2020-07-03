@@ -13,7 +13,7 @@ export class FieldEntity{
 
     constructor(name: string, shortName: string, required: boolean = true, readonly: boolean = false ){
         this.name = name
-        this.shortName = name
+        this.shortName = shortName
         this.required = required
         this.readonly = readonly
     }

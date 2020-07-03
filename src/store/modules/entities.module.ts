@@ -40,7 +40,7 @@ export const EntitiesModule: Module<ShapesModuleState, {}> = {
                 commit('ADD_ENTITY', entity)
                 commit('SET_CURRENT_ENTITY', entity)
             } catch (error) {
-                console.error(error)
+                console.error("createEntity: " + error)
                 alert(error.message)
             }
         }

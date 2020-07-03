@@ -5,13 +5,27 @@
                 Properties
             </p>
         </header>
-        <div v-height="20"></div>
+        <div class="match-height" bg="orange">
+            <div v-if="currentEntity == undefined">
+               <p class="text-center">
+                    <i>No component selected</i>
+               </p>
+            </div>
+            <div v-else>
+                <component :fieldEntity="f" v-for="(f, index) in currentEntity.fields" :key='index' :is="f.type" />
+            </div>
+        </div>
     </div>
 </template>
 <script>
-
+import fields from '../fields'
+import {createNamespacedHelpers} from 'vuex'
+const {mapActions, mapState} = createNamespacedHelpers('project/entities')
 export default {
-   
+    components: fields,
+    computed:{
+        ...mapState(["currentEntity"])
+    }
 }
 </script>
 <style lang="scss" scoped>
@@ -20,6 +34,8 @@ export default {
     height: 100%;
     border-left: 2px solid rgb(224, 231, 235);;
     color: $color-primary;
+    overflow: hidden;
+    overflow-y: auto;
     &>header{
         &>p{
             text-transform: uppercase;

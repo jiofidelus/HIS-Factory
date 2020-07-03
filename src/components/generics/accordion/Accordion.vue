@@ -1,12 +1,12 @@
 <template>
-    <div class="accordion">
+    <div class="x-accordion">
         <header :class="headerClass" @click.stop="toggleAccordion">
             <span>{{title}}</span>
-            <button class="caret" :class="{'is-open': showAccordionBody}">
+            <button class="caret" :class="{'is-open': hideAccordionBody}">
                 <span>&#9660;</span>
             </button>
         </header>
-        <div class="accordion-body " :class="{'is-closed': showAccordionBody}">
+        <div class="x-accordion-body " :class="{'is-closed': hideAccordionBody}">
             <slot/>
         </div>
     </div>
@@ -21,12 +21,12 @@ export default {
     data(){
         return {
             index: 0,
-            showAccordionBody: false
+            hideAccordionBody: true
         }
     },
     methods:{
         toggleAccordion(){
-            this.showAccordionBody = ! this.showAccordionBody
+            this.hideAccordionBody = ! this.hideAccordionBody
         }
     },
     mounted(){
@@ -36,8 +36,8 @@ export default {
     }
 }
 </script>
-<style lang="scss" scoped>
-.accordion{
+<style lang="scss">
+.x-accordion{
     &>header{
         position: relative;
         display: flex;
@@ -70,13 +70,14 @@ export default {
             width: 20px;
             border-radius: 50%;
             padding: 0;
+            cursor: pointer;
 
             &.is-open{
                 transform: rotate(-180deg);
             }
         }
     }
-    .accordion-body{
+    .x-accordion-body{
         position: relative;
         transition: all 0.5s linear;
         max-height: 300px;

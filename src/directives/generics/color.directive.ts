@@ -1,3 +1,3 @@
 export default function(el: HTMLElement, binding: any) {
-    el.style.backgroundColor = binding.value
+    el.style.color = binding.value
 }

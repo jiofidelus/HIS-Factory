@@ -1,5 +1,5 @@
 <template>
-    <div class="accordion-item" :class="className">
+    <div class="x-accordion-item" :class="className">
         <slot/>
     </div>
 </template>
@@ -14,10 +14,10 @@ export default {
 
 }
 </script>
-<style lang="scss" scoped>
-.accordion-item{
+<style lang="scss">
+.x-accordion-item{
     padding: 10px;
     font-size: 12px;
-    border-bottom: 1px solid #1f2936;
+    border-bottom: 1px solid #00000028;
 }
 </style>

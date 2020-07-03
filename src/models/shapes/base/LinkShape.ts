@@ -12,7 +12,7 @@ export class LinkShape extends Shape{
         this.leftElement = leftElement
         this.rightElement = rightElement
 
-
+       
     }
 
 }
