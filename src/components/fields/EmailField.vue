@@ -1,5 +1,6 @@
 <template>
-    <string-field :fieldEntity="fieldEntity" />
+    <string-field :fieldEntity="fieldEntity">
+    </string-field>
 </template>
 <script lang="ts">
 import StringField from './StringField.vue'

@@ -1,4 +1,4 @@
-import TextField from './StringField.vue'
+import TextField from './TextField.vue'
 
 export default{
     TextField

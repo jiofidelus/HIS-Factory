@@ -8,19 +8,28 @@
 export default {
     data(){
         return {
-            size: {width: 0, height: 0}
+            size: {width: 0, height: 0},
+            graph: {},
+            paper: {}
         }
     },
     mounted(){
-    
+        // window.onresize = (e)=>{
+            
+        //     const  {width, height} = this.$el.getBoundingClientRect()
+        //     console.log(width)
+        //     this.size.width = width
+        //     this.size.height = height
+        //     this.paper.setDimensions(width, height)
+        // }
        const  {width, height} = this.$el.getBoundingClientRect()
        this.size.width = width
        this.size.height = height
-       const graph = new joint.dia.Graph;
+       this.graph = new this.$joint.dia.Graph;
 
-        const paper = new joint.dia.Paper({
+        this.paper = new this.$joint.dia.Paper({
             el: document.getElementById('canvas-panel'),
-            model: graph,
+            model: this.graph,
             width: this.size.width ,
             height: this.size.height,
             gridSize: 10,
@@ -30,7 +39,8 @@ export default {
             }
         });
 
-        const rect = new joint.shapes.standard.Rectangle();
+
+        const rect = new this.$joint.shapes.standard.Rectangle();
         rect.position(100, 30);
         rect.resize(100, 40);
         rect.attr({
@@ -38,21 +48,21 @@ export default {
                 fill: 'blue'
             },
             label: {
-                text: 'Hello',
+                text: 'What',
                 fill: 'white'
             }
         });
-        rect.addTo(graph);
+        rect.addTo(this.graph);
 
         const rect2 = rect.clone();
         rect2.translate(300, 0);
         rect2.attr('label/text', 'World!');
-        rect2.addTo(graph);
+        rect2.addTo(this.graph);
 
-        const link = new joint.shapes.standard.Link();
+        const link = new this.$joint.shapes.standard.Link();
         link.source(rect);
         link.target(rect2);
-        link.addTo(graph);
+        link.addTo(this.graph);
    }
 }
 </script>

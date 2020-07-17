@@ -4,7 +4,9 @@
             <div class="d-flex flex-column">
                 <div class="x-field-entry d-flex flex-column">
                     <label>Name</label>
-                    <input type="text" v-model="fieldEntity.name">
+                    <slot name="input-field">
+                         <input type="text" v-model="fieldEntity.name">
+                    </slot>
                 </div>
                 <div class="x-field-prop d-flex flex-column">
                     <label>Short name</label>
@@ -38,6 +40,7 @@ export default class StringField extends Vue{
     
     toggleBody(){
         this.showBody = !this.showBody
+        
     }
 }
 </script>
