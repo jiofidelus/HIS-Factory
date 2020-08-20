@@ -1,7 +1,7 @@
 <template>
     <div id="home-page" class="match-parent">
         <section id="site-presentation"></section>
-        <sction id="auth">
+        <section id="auth">
             <nav>
                 <div class="app-brand">
                     <span class='font-600'>HISQuery</span>
@@ -16,7 +16,7 @@
                     <router-view/>
                 </transition>
             </main>
-        </sction>
+        </section>
     </div>
 </template>
 <script>

@@ -1,6 +1,7 @@
 export class Shape{
 
     private _id!: number 
+    public root: any|undefined
     public type = Shape.name
     public name = Shape.name
     public top: number = 0

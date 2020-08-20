@@ -1,16 +1,28 @@
 <template>
     <div id="canvas-panel">
         
+        
     </div>
 </template>
 <script>
+import Vue from "vue"
+import entitiesMixins from '../../mixins/entities.mixins'
 
-export default {
+export default Vue.extend ({
+    mixins: [entitiesMixins],
+    watch:{
+        entities:function(values){
+            const last =  values[values.length-1]
+          
+            last.shape.root.addTo(this.graph)
+        }
+    },
     data(){
         return {
             size: {width: 0, height: 0},
             graph: {},
-            paper: {}
+            paper: {},
+            color: "green"
         }
     },
     mounted(){
@@ -45,7 +57,7 @@ export default {
         rect.resize(100, 40);
         rect.attr({
             body: {
-                fill: 'blue'
+                fill: this.color
             },
             label: {
                 text: 'What',
@@ -63,8 +75,11 @@ export default {
         link.source(rect);
         link.target(rect2);
         link.addTo(this.graph);
+
+        
+
    }
-}
+})
 </script>
 <style lang="scss" scoped>
 

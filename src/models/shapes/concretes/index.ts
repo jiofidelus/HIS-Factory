@@ -1,5 +1,5 @@
-import {PatientEntity} from './PatientEntity'
+import PatientShape from './PatientShape'
 
 export {
-    PatientEntity
+    PatientShape
 }

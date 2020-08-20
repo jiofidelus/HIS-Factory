@@ -1,6 +1,6 @@
 import { Module } from "vuex";
-import { ConcreteEntity } from '@/models/shapes/concretes/ConcreteEntity';
-import { PatientEntity } from '@/models/shapes/concretes';
+import { ConcreteEntity } from '@/models/entities/ConcreteEntity';
+import { PatientEntity } from '@/models/entities';
 
 
 export interface ShapesModuleState{

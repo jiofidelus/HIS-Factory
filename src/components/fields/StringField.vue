@@ -35,13 +35,6 @@ export default class StringField extends Vue{
     
     @Prop() readonly fieldEntity!: FieldEntity
 
-    index = 0
-    showBody  = true
-    
-    toggleBody(){
-        this.showBody = !this.showBody
-        
-    }
 }
 </script>
 <style lang="scss">
