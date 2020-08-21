@@ -26,7 +26,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 #home-page{
-    color: black;;
+    color: black;
     display: grid;
     grid-template-columns: 300px 1fr;
 

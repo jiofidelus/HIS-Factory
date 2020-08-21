@@ -18,6 +18,18 @@ export class Shape{
         this.top = top
         this.left = left
         this._id =  Date.now()
-    } 
+    }
+    
+    createShape(){
+        
+    }
+
+    applySelectedStyle(){
+
+    }
+
+    applyUnselectedStyle(){
+
+    }
     
 }

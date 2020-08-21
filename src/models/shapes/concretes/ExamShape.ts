@@ -1,13 +1,8 @@
-import { ElementShape } from "../base/ElementShape";
+import { ElementShape } from '../base/ElementShape';
 import { joint } from '@/plugins/rappid';
 
 
-export default class PatientShape extends ElementShape{
-
-    constructor(){
-        super()
-        
-    }
+export default class ExamShape extends ElementShape{
 
     createShape(){
         this.root = new joint.shapes.standard.Rectangle()
@@ -18,17 +13,9 @@ export default class PatientShape extends ElementShape{
                 
             },
             label: {
-                text: 'Patient',
+                text: 'Examen',
                 
             }
         })
     }
-
-    
-
-   
-
-    
-    
-    
 }

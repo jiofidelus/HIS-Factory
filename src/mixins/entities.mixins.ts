@@ -6,6 +6,6 @@ export default Vue.extend({
         ...mapState(['currentEntity', 'entities'])
     },
     methods:{
-        ...mapActions(['createEntity'])
+        ...mapActions(['createEntity', 'updateCurrentEntity'])
     }
 })

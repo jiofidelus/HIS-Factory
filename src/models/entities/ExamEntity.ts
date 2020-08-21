@@ -1,9 +1,13 @@
 import { ConcreteEntity } from "./ConcreteEntity";
+import ExamShape from '../shapes/concretes/ExamShape';
 
-class ExamEntity extends ConcreteEntity{
+export class ExamEntity extends ConcreteEntity{
 
     addFields(){
         super.addFields();
     }
 
+    createShape(){
+        this.shape = new ExamShape()
+    }
 }
