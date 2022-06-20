@@ -1,4 +1,4 @@
-# hisquery
+# HIS Factory
 
 ## Project setup
 ```
