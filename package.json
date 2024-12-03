@@ -12,7 +12,7 @@
     "dependencies": {
         "core-js": "^3.6.5",
         "express": "^4.17.1",
-        "mongoose": "^5.9.20",
+        "mongoose": "^8.8.3",
         "register-service-worker": "^1.7.1",
         "vue": "^2.6.11",
         "vue-class-component": "^7.2.3",
